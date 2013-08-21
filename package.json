@@ -1,0 +1,22 @@
+{
+    "name" : "fis-parser-dust",
+    "description" : "A parser plugin for fis to compile dust file.",
+    "version" : "0.0.1",
+    "author" : "FIS Team <fis@baidu.com>; yqt0221@gmail.com",
+    "homepage" : "http://fis.baidu.com/; http://dothack.tk",
+    "keywords": [ "fis", "dust", "dustjs-linkedin" ],
+    "main" : "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yqt/fis-parser-dust.git"
+    },
+    "engines" : {
+        "node" : ">= 0.8.0"
+    },
+    "scripts" : {
+        "test" : "mocha test/ut --recursive"
+    },
+    "dependencies" : {
+        "dustjs-linkedin" : "*"
+    }
+}

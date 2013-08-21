@@ -1,0 +1,32 @@
+# fis-parser-dust
+
+A parser plugin for fis to compile dust file.
+
+## usage
+
+    $ npm install -g fis-parser-dust
+    $ vi path/to/project/fis-conf.js
+
+```javascript
+//file : path/to/project/fis-conf.js
+//NOTE : name of template registed in dust will be '/relative/path/to/.dust/file', one more '/' than the output of grunt-dust.
+fis.config.merge({
+    roadmap : {
+        ext : {
+            dust : 'dust'
+        }
+    },
+    modules : {
+        parser : {
+            dust : 'dust'
+        }
+    },
+    settings : {
+        parser : {
+            dust : {
+                basePath : "" //optional: rewrite prefix before filename
+            }
+        }
+    }
+});
+```
