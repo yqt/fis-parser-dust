@@ -1,14 +1,14 @@
 {
-    "name" : "fis-parser-dust",
+    "name" : "fis-parser-dustjs",
     "description" : "A parser plugin for fis to compile dust file.",
-    "version" : "0.0.1",
-    "author" : "FIS Team <fis@baidu.com>; yqt0221@gmail.com",
-    "homepage" : "https://github.com/yqt/fis-parser-dust",
+    "version" : "0.0.2",
+    "author" : "FIS Team <fis@baidu.com>; yqt0221@gmail.com; v@luzhe.info",
+    "homepage" : "https://github.com/5percent/fis-parser-dust",
     "keywords": [ "fis", "dust", "dustjs-linkedin" ],
     "main" : "index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/yqt/fis-parser-dust.git"
+        "url": "https://github.com/5percent/fis-parser-dust.git"
     },
     "engines" : {
         "node" : ">= 0.8.0"

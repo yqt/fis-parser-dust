@@ -4,7 +4,7 @@ A parser plugin for fis to compile dust file.
 
 ## usage
 
-    $ npm install -g fis-parser-dust
+    $ npm install -g fis-parser-dustjs
     $ vi path/to/project/fis-conf.js
 
 ```javascript
@@ -13,7 +13,15 @@ A parser plugin for fis to compile dust file.
 fis.config.merge({
     roadmap : {
         ext : {
-            dust : 'dust'
+            dust : 'dustjs'
+        },
+        path : {
+            reg: /\/dust\/(.*)\.dust$/,    // your location of dust files
+            isMod: true,
+            useParser: true,
+            useCompile: true,
+            isJsLike: true,
+            release: '/static/dust/$1.js'  // your release path of dust files
         }
     },
     modules : {
