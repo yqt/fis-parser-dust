@@ -4,7 +4,7 @@ A parser plugin for fis to compile dust file.
 
 ## usage
 
-    $ npm install -g fis-parser-dustjs
+    $ npm install -g fis-parser-dust
     $ vi path/to/project/fis-conf.js
 
 ```javascript
@@ -26,7 +26,7 @@ fis.config.merge({
     },
     modules : {
         parser : {
-            dust : 'dustjs'
+            dust : 'dust'
         }
     },
     settings : {
