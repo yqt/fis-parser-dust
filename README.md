@@ -13,8 +13,16 @@ A parser plugin for fis to compile dust file.
 fis.config.merge({
     roadmap : {
         ext : {
-            dust : 'dust'
-        }
+            dust : 'js'
+        },
+        path : [{  // maybe you need fis.config.concat instead of fis.config.merge
+            reg: /\/dust\/(.*)\.dust$/,    // your location of dust files
+            isMod: true,
+            useParser: true,
+            useCompile: true,
+            isJsLike: true,
+            release: '/static/dust/$1.js'  // your release path of dust files
+        }]
     },
     modules : {
         parser : {
